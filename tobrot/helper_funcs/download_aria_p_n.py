@@ -48,7 +48,7 @@ async def aria_start():
     aria2_daemon_start_cmd.append("--rpc-max-request-size=1024M")
     aria2_daemon_start_cmd.append("--enable-peer-exchange=true")
     aria2_daemon_start_cmd.append("--seed-ratio=1.0")
-    aria2_daemon_start_cmd.append("--seed-time=0")
+    aria2_daemon_start_cmd.append("--seed-time=1")
     aria2_daemon_start_cmd.append("--split=10")
     aria2_daemon_start_cmd.append("--bt-request-peer-speed-limit=150000M")
     aria2_daemon_start_cmd.append(f"--bt-tracker={akc_trackers}") 
